@@ -634,7 +634,7 @@
                 unqualifiedVersion = major + "." + minor + "." + incremental;
                 project.getProperties().setProperty("unqualifiedVersion", unqualifiedVersion);
 
-                qualifier = "${maven.build.timestamp}";
+                qualifier = "whitelist";
                 project.getProperties().setProperty("buildQualifier", qualifier);
 
                 qualifiedVersion = unqualifiedVersion + "." + qualifier;

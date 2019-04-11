@@ -15,3 +15,15 @@ for questions regarding JaCoCo which are not already covered by the
 
 Note: We do not answer general questions in the project's issue tracker. Please use our [mailing list](https://groups.google.com/forum/?fromgroups=#!forum/jacoco) for this.
 -------------------------------------------------------------------------
+
+
+# building custom jar 
+
+```
+git checkout _coverage
+mvn clean package -DskipTests=True
+cd jacoco/target
+unzip jacoco/target/jacoco-0.8.3.whiltelist.zip
+cp ./lib/org.jacoco.* to <dest_dir>
+
+```
